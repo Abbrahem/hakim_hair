@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>عياده حكيم لزراعه الشعر</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"  />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="logo">Hakim Hair Clinic</div>
+<button class="menu-btn" aria-label="Toggle Menu">☰</button>
+    <ul class="nav-links">
+      <!-- باقي العناصر -->
+
+      <li><a href="#hero">الرئيسية</a></li>
+              <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="questions.html" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            اعرف عن الزراعه اكتر
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <li><a class="dropdown-item" href="questions.html#why-wrong">مقدمة توعوية</a></li>
+            <li><a class="dropdown-item" href="questions.html#advantages">مميزات زراعة الشعر</a></li>
+            <li><a class="dropdown-item" href="questions.html#disadvantages">عيوب الزراعة</a></li>
+            <li><a class="dropdown-item" href="questions.html#methods">طرق الزراعة</a></li>
+            <li><a class="dropdown-item" href="questions.html#pain">هل الزراعة مؤلمة؟</a></li>
+            <li><a class="dropdown-item" href="questions.html#offer">العرض الخاص</a></li>
+            <li><a class="dropdown-item" href="questions.html#instructions">التعليمات</a></li>
+            <li><a class="dropdown-item" href="questions.html#rest">مدة الراحة</a></li>
+            <li><a class="dropdown-item" href="questions.html#islam">الحكم الشرعي</a></li>
+            <li><a class="dropdown-item" href="questions.html#contact">التواصل</a></li>
+          </ul>
+        </li>
+      <li><a href="#before-after">قبل وبعد</a></li>
+     <li><a href="#hair-benefits">فوائد زراعة الشعر</a></li>
+      <li><a href="#testimonials">التقييمات</a></li>
+      <li><a href="#reservation">حجز موعد</a></li>
+      <li><a href="#about">عنا</a></li>
+      <li><a href="#contact">اتصل بنا</a></li>
+   <li><a href="#" id="langToggle">English</a></li>
+
+    </ul>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  </div>
+</nav>
+  
+<section class="bg-medical text-white text-center" style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <div>
+      <h1 data-aos="fade-down">Hakim Hair Clinic</h1>
+      <p data-aos="fade-up" data-aos-delay="200">
+        استشارات دقيقة. علاج فعّال.<br>
+        لأن راحتك أهم
+      </p>
+  
+      <!-- ✅ الصورة بين البراجراف والزر -->
+      <div data-aos="zoom-in" data-aos-delay="300">
+        <img src="hair.jpg" alt="clinic image" style="width: 250px; height: auto; max-height: 180px;">
+      </div>
+  <a href="#reservation" class="btn btn-light" style="margin-top: 30px;" data-aos="fade-up" data-aos-delay="600">احجز الآن</a>
+
+
+    </div>
+  </section>
+
+  <!-- Before & After -->
+  <section id="before-after" class="section before-after" data-aos="fade-up">
+    <h2>قبل وبعد العملية</h2>
+    <div class="gallery">
+      <img src="after.jpg" alt="قبل 1" />
+      <img src="befoar.jpg" alt="بعد 1" />
+      <img src="after1.jpg" alt="قبل 2" />
+      <img src="befoar1.jpg" alt="بعد 2" />
+      <img src="after2.jpg" alt="قبل 3" />
+      <img src="befoar2.jpg" alt="بعد 3" />
+    </div>
+  </section>
+
+  
+<section id="hair-benefits" class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="mb-5" data-aos="fade-up">فوائد زراعة الشعر</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Card: Benefit 1 -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card benefit-card border-0 shadow-lg h-100">
+          <img src="shower.jpg" class="card-img-top" alt="حرية التعامل مع الشعر" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">حرية التعامل</h5>
+            <p class="card-text">الشعر المزروع يمكن قصه وغسله واستخدام الكريمات عليه بحرية تامة مثل الشعر الطبيعي.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Benefit 2 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card benefit-card border-0 shadow-lg h-100">
+          <img src="gazr.webp" class="card-img-top" alt="نتائج دائمة" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">نتائج دائمة</h5>
+            <p class="card-text">الجذور المزروعة مأخوذة من المنطقة الخلفية التي لا تتأثر بجين الصلع الوراثي.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Benefit 3 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card benefit-card border-0 shadow-lg h-100">
+          <img src="hart.jpg" class="card-img-top" alt="بدون ألم حقيقي" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">بدون ألم حقيقي</h5>
+            <p class="card-text">البنج موضعي والمريض لا يشعر بألم خلال أو بعد الزراعة، وغالبًا لا يحتاج مسكنات.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Benefit 4 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card benefit-card border-0 shadow-lg h-100">
+          <img src="prp.jpg" class="card-img-top" alt="لا تحتاج لإجازة طويلة" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">لا تحتاج لإجازة طويلة</h5>
+            <p class="card-text">بعض العملاء يعودون إلى العمل في اليوم التالي للعملية بدون مشاكل.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Benefit 5 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+        <div class="card benefit-card border-0 shadow-lg h-100">
+          <img src="fue.webp" class="card-img-top" alt="طريقة غير جراحية" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">طريقة غير جراحية</h5>
+            <p class="card-text">تقنية FUE لا تعتمد على جراحة أو خياطة ولا تترك آثاراً دائمة.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Benefit 6 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+        <div class="card benefit-card border-0 shadow-lg h-100">
+          <img src="befoar1.jpg" class="card-img-top" alt="نتيجة طبيعية" style="height: 180px; object-fit: contain; padding: 5px;">
+          <div class="card-body">
+            <h5 class="card-title">نتيجة طبيعية</h5>
+            <p class="card-text">الشعر المزروع يعطي مظهر طبيعي ويتكامل مع الشعر الموجود بكل سلاسة.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Testimonials as Cards -->
+<section id="testimonials" class="section testimonials" data-aos="fade-up">
+    <h2>آراء العملاء</h2>
+    <div class="testimonial-cards">
+      
+      <div class="testimonial-card">
+        <img src="doctor.jpg" alt="محمد أحمد" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+        <p>"غير حياتي! الشعور بالثقة عاد لي."</p>
+        <h4>– محمد أحمد</h4>
+      </div>
+  
+      <div class="testimonial-card">
+        <img src="nurse.jpg" alt="لينا علي" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+        <p>"نتيجة طبيعية جداً، فريق احترافي ومهتم."</p>
+        <h4>– لينا علي</h4>
+      </div>
+  
+      <div class="testimonial-card">
+        <img src="hair.jpg" alt="عمر خالد" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+        <p>"تجربة رائعة بكل المقاييس! أنصح الجميع بالتجربة."</p>
+        <h4>– عمر خالد</h4>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- Reservation -->
+  <section id="reservation" class="section reservation" data-aos="fade-up">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>احجز موعدك الآن</h2>
+          <form id="appointmentForm" onsubmit="sendToWhatsApp(event)">
+            <input type="text" id="fullName" placeholder="الاسم الكامل" required />
+            <input type="email" id="email" placeholder="البريد الإلكتروني" required />
+            <input type="tel" id="phone" placeholder="رقم الهاتف" required />
+            <button type="submit">إرسال الطلب</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img src="hagz.webp" alt="حجز موعد" style="width: 500px; height: auto; max-height: 300px; object-fit: contain; border-radius: 10px; margin-left: -100px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- About as Card -->
+<section id="about" class="section about" data-aos="fade-up">
+    <h2>عن العيادة</h2>
+    <div class="about-card">
+      <img src="hair.jpg" alt="صورة العيادة">
+      <div class="about-text">
+        <h3> Hakim Hair Clinic</h3>
+        <p>نحن نقدم أعلى معايير الجودة في مجال زراعة الشعر باستخدام أفضل التقنيات الحديثة وأكثرها دقة تحت إشراف فريق طبي متمرس.</p>
+        <p>هدفنا هو إعادة الثقة إلى عملائنا من خلال نتائج طبيعية ومظهر جذاب، مع تجربة علاج مريحة وآمنة 100%.</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact as Cards -->
+<section id="contact" class="section contact" data-aos="fade-up">
+    <h2>تواصل معنا</h2>
+    <div class="contact-cards">
+      
+      <div class="contact-card">
+        <h3>🗺️ الموقع</h3>
+        <p> لمهندسين بميدان لبنان بجوار بنك عوده مباشرة 19 شارع اليمن الدور الثاني Cairo, Egypt</p>
+      </div>
+  
+      <div class="contact-card">
+        <h3>📞 الهاتف</h3>
+        <p>(+2)01201077428 </p>
+      </div>
+  
+      <div class="contact-card">
+        <h3>✉️ البريد الإلكتروني</h3>
+        <p>hakimhairclinic@gmail.com</p>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>📍 موقعنا على الخريطة</h3>
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13813.726770453794!2d31.242628698169028!3d30.053158039497735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z2KfZhNmF2YfZhtiv2LPZitmGINio2YXZitiv2KfZhiDZhNio2YbYp9mGINio2KzZiNin2LEg2KjZhtmDINi52YjYr9mHINmF2KjYp9i02LHYqSAxOSDYtNin2LHYuSDYp9mE2YrZhdmGINin2YTYr9mI2LEg2KfZhNir2KfZhtmKIENhaXJvLCBFZ3lwdA!5e0!3m2!1sar!2seg!4v1749908268949!5m2!1sar!2seg"
+      width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="socials">
+      <a href="tel:+201201077428">📞 201201077428 اتصل</a> |  
+      <a href="mailto:hakimhairclinic@gmail.com">📧 hakimhairclinic@gmail.com البريد</a> | 
+      <a href="https://wa.me/201201077428">💬 201201077428 واتساب</a>
+    </div>
+    <p>&copy; 2025 Hakim Hair Clinic. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+  <script>
+       AOS.init({ once: true, duration: 800 });
+lottie.loadAnimation({
+  container: document.getElementById('hero‑animation'),
+  renderer: 'svg', loop: true, autoplay: true,
+  path: 'https://assets7.lottiefiles.com/...json'
+});
+
+
+
+    // Mobile menu functionality
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      menuBtn.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.navbar')) {
+        navLinks.classList.remove('show');
+        menuBtn.classList.remove('active');
+      }
+    });
+
+    // Translations object
+   const translations = {
+  en: {
+    // Navbar
+    navHome: "Home",
+    navLearn: "Learn More",
+    navBeforeAfter: "Before & After",
+    navBenefits: "Hair Transplant Benefits",
+    navTestimonials: "Testimonials",
+    navBook: "Book Appointment",
+    navAbout: "About Us",
+    navContact: "Contact",
+    navLang: "العربية",
+
+    // Hero
+    heroTitle: "Hakim Hair Clinic",
+    heroSubtitle: "Precise consultations. Effective treatment. Because your comfort matters",
+    heroButton: "Book Now",
+
+    // Sections
+    beforeAfterTitle: "Before and After",
+    benefitsTitle: "Hair Transplant Benefits",
+    benefit1: "Freedom",
+    benefit1Desc: "You can cut, wash, and use products on transplanted hair just like natural hair.",
+    benefit2: "Permanent Results",
+    benefit2Desc: "The roots come from a baldness-resistant zone at the back of the head.",
+    benefit3: "No Real Pain",
+    benefit3Desc: "Local anesthesia means no pain during or after the procedure.",
+    benefit4: "No Downtime",
+    benefit4Desc: "Many clients return to work the very next day.",
+    benefit5: "Non-Surgical",
+    benefit5Desc: "FUE method doesn't involve cutting or stitches.",
+    benefit6: "Natural Look",
+    benefit6Desc: "Transplanted hair blends in naturally with your own.",
+
+    testimonialsTitle: "What Clients Say",
+    testimonial1: `"Changed my life! Confidence is back." – Mohamed Ahmed`,
+    testimonial2: `"Very natural result, professional team." – Lina Ali`,
+    testimonial3: `"Amazing experience, I highly recommend!" – Omar Khaled`,
+
+    reservationTitle: "Book Your Appointment",
+    placeholderName: "Full Name",
+    placeholderEmail: "Email",
+    placeholderPhone: "Phone Number",
+    submitButton: "Send Request",
+
+    aboutTitle: "About the Clinic",
+    aboutP1: "We offer the highest quality in hair transplantation with the latest technologies and experienced doctors.",
+    aboutP2: "Our goal is to restore confidence through natural results in a comfortable and safe environment.",
+
+    contactTitle: "Contact Us",
+    contactLocation: "📍 Location",
+    contactPhone: "📞 Phone",
+    contactEmail: "✉️ Email",
+    contactMapTitle: "📍 Our Location on the Map",
+    callNow: "📞 Call Now",
+    footerRights: "All rights reserved.",
+  }
+};
+
+   function updateContent(lang) {
+  const t = translations[lang];
+
+  // Navbar
+  document.querySelector('a[href="#hero"]').textContent = t.navHome;
+  document.querySelector('a.nav-link.dropdown-toggle').textContent = t.navLearn;
+  document.querySelector('a[href="#before-after"]').textContent = t.navBeforeAfter;
+  document.querySelector('a[href="#hair-benefits"]').textContent = t.navBenefits;
+  document.querySelector('a[href="#testimonials"]').textContent = t.navTestimonials;
+  document.querySelector('a[href="#reservation"]').textContent = t.navBook;
+  document.querySelector('a[href="#about"]').textContent = t.navAbout;
+  document.querySelector('a[href="#contact"]').textContent = t.navContact;
+  document.getElementById('langToggle').textContent = t.navLang;
+
+  // Hero Section
+  document.querySelector(".bg-medical h1").textContent = t.heroTitle;
+  document.querySelector(".bg-medical p").textContent = t.heroSubtitle;
+  document.querySelector(".bg-medical .btn").textContent = t.heroButton;
+
+  // Before & After
+  document.querySelector("#before-after h2").textContent = t.beforeAfterTitle;
+
+  // Benefits Section
+  document.querySelector("#hair-benefits h2").textContent = t.benefitsTitle;
+  const titles = document.querySelectorAll("#hair-benefits .card-title");
+  const texts = document.querySelectorAll("#hair-benefits .card-text");
+  titles[0].textContent = t.benefit1;
+  texts[0].textContent = t.benefit1Desc;
+  titles[1].textContent = t.benefit2;
+  texts[1].textContent = t.benefit2Desc;
+  titles[2].textContent = t.benefit3;
+  texts[2].textContent = t.benefit3Desc;
+  titles[3].textContent = t.benefit4;
+  texts[3].textContent = t.benefit4Desc;
+  titles[4].textContent = t.benefit5;
+  texts[4].textContent = t.benefit5Desc;
+  titles[5].textContent = t.benefit6;
+  texts[5].textContent = t.benefit6Desc;
+
+  // Testimonials
+  document.querySelector("#testimonials h2").textContent = t.testimonialsTitle;
+  const testimonials = document.querySelectorAll(".testimonial-card p");
+  const names = document.querySelectorAll(".testimonial-card h4");
+  testimonials[0].textContent = `"Changed my life! Confidence is back."`;
+  names[0].textContent = "– Mohamed Ahmed";
+  testimonials[1].textContent = `"Very natural result, professional team."`;
+  names[1].textContent = "– Lina Ali";
+  testimonials[2].textContent = `"Amazing experience, I highly recommend!"`;
+  names[2].textContent = "– Omar Khaled";
+
+  // Reservation
+  document.querySelector("#reservation h2").textContent = t.reservationTitle;
+  document.getElementById("fullName").placeholder = t.placeholderName;
+  document.getElementById("email").placeholder = t.placeholderEmail;
+  document.getElementById("phone").placeholder = t.placeholderPhone;
+  document.querySelector("#reservation button").textContent = t.submitButton;
+
+  // About
+  document.querySelector("#about h2").textContent = t.aboutTitle;
+  const aboutPs = document.querySelectorAll("#about .about-text p");
+  aboutPs[0].textContent = t.aboutP1;
+  aboutPs[1].textContent = t.aboutP2;
+
+  // Contact
+  document.querySelector("#contact h2").textContent = t.contactTitle;
+  const contactTitles = document.querySelectorAll(".contact-card h3");
+  contactTitles[0].textContent = t.contactLocation;
+  contactTitles[1].textContent = t.contactPhone;
+  contactTitles[2].textContent = t.contactEmail;
+
+  // Footer
+  document.querySelector(".footer h3").textContent = t.contactMapTitle;
+  document.querySelector(".socials a:first-child").textContent = t.callNow;
+  document.querySelector(".footer p").textContent = `© 2025 Hakim Hair Clinic. ${t.footerRights}`;
+}
+
+// Language toggle
+document.getElementById('langToggle').addEventListener('click', function(e) {
+  e.preventDefault();
+  const html = document.documentElement;
+  const currentLang = html.getAttribute('data-lang') || 'ar';
+  const newLang = currentLang === 'ar' ? 'en' : 'ar';
+
+  html.setAttribute('data-lang', newLang);
+  html.setAttribute('lang', newLang);
+  html.setAttribute('dir', newLang === 'ar' ? 'rtl' : 'ltr');
+
+  this.textContent = newLang === 'ar' ? 'English' : 'العربية';
+
+  updateContent(newLang);
+});
+
+  </script>
+  <script>
+  function sendToWhatsApp(event) {
+    event.preventDefault(); // يمنع الإرسال التقليدي
+
+    const name = document.getElementById("fullName").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+
+    const message = `احجز موعد:\nالاسم: ${name}\nالبريد الإلكتروني: ${email}\nرقم الهاتف: ${phone}`;
+
+    const whatsappNumber = "201201077428"; // بدون +
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+  }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.querySelector(".menu-btn");
+    const navLinks = document.querySelector(".nav-links");
+
+    // قائمة الموبايل
+    menuBtn.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+    });
+
+    // زر اللغة
+    const langBtn = document.getElementById("langToggle");
+    if (langBtn) {
+      langBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        const html = document.documentElement;
+        const currentLang = html.getAttribute("data-lang") || "ar";
+        const newLang = currentLang === "ar" ? "en" : "ar";
+
+        html.setAttribute("data-lang", newLang);
+        html.setAttribute("lang", newLang);
+        html.setAttribute("dir", newLang === "ar" ? "rtl" : "ltr");
+
+        this.textContent = newLang === "ar" ? "English" : "العربية";
+
+        updateContent(newLang);
+      });
+    }
+  });
+</script>
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('light-theme');
+    
+    const btn = document.querySelector('.theme-toggle');
+    btn.textContent = document.body.classList.contains('light-theme') ? '🌙' : '☀️';
+
+    const isLight = document.body.classList.contains('light-theme');
+
+    document.querySelectorAll('h1, h2, h3, p, a, span, li, label').forEach(el => {
+      el.style.color = isLight ? '#111' : 'white';
+    });
+  }
+</script>
+
+
+
+
+
+</body>
+</html>
